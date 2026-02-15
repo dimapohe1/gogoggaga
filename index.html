@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Видео по теме проекта</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 26px;
+    color: white;
+}
+
+
+
+header {
+    background: #1e1e2f;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+
+
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.03);
+}
+
+
+
+footer {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ff9800;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+    <nav>
+        <div class="logo">MyProject</div>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main>
+    <section class="video-section">
+        <h1>Видео по теме проекта</h1>
+        <p class="description">
+            Здесь собрана подборка интересных видеороликов, которые раскрывают
+            тему проекта, помогают лучше разобраться в материале и делают
+            изучение более наглядным.
+        </p>
+
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video" frameborder="0" allowfullscreen></iframe>
+
+            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0"
+                title="YouTube video" frameborder="0" allowfullscreen></iframe>
+
+            <iframe src="https://www.youtube.com/embed/l482T0yNkeo"
+                title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+</main>
+
+<!-- ======================
+     ПОДВАЛ
+====================== -->
+
+<footer>
+    <p>© 2026 MyProject | Все права защищены</p>
+    <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Связаться с нами</a>
+    </div>
+</footer>
+
+</body>
+</html>
